@@ -12,4 +12,17 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p> -->
+
+  <div class="intro">
+    <h1>Farm Connect</h1>
+    <h4>There is fresh food close to you. Let's get some.</h4>
+  </div>
+
+
+    <div class="form-group">
+      <input class="form-control" type="text" (input)="newZip = $event.target.value" [value]="newZip" placeholder="Zip Code">
+    </div>
+    <button type="button" class="btn btn-info">Search</button>
 </ion-content>
+
+<!-- (click)="clickedSaveButton()" -->
