@@ -20,3 +20,26 @@ page-home {
   background: #4CAFAC;
   // opacity: 0.3;
 }
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+form {
+  margin-top: 30%;
+  padding: 25%;
+  text-align: center;
+  background-color: #FECD56;
+  opacity: 0.8;
+  border-radius: 20px 20px;
+  box-shadow: 4px 4px 4px gray;
+}
+
+h4 {
+  margin-top: 10%;
+  text-align: center;
+  text-shadow: 3px 3px 3px teal;
+}

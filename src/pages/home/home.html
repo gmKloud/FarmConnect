@@ -15,14 +15,15 @@
 
   <div class="intro">
     <h1>Farm Connect</h1>
-    <h4>There is fresh food close to you. Let's get some.</h4>
+    <h4>Fresh food is around you. Let's get some!</h4>
   </div>
 
-
+  <form (ngSubmit)="onSubmit()" #zipForm="ngForm">
     <div class="form-group">
-      <input class="form-control" type="text" (input)="newZip = $event.target.value" [value]="newZip" placeholder="Zip Code">
+      <input type="text" id="zip" name="zip" required class="form-control">
     </div>
-    <button type="button" class="btn btn-info">Search</button>
+    <button (click)="subToGet()" type="submit" class="btn btn-success" [disabled]="!zipForm.form.valid">Search</button>
+  </form>
 </ion-content>
 
 <!-- (click)="clickedSaveButton()" -->
